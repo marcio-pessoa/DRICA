@@ -1,0 +1,114 @@
+;Device control file - low level -
+;DRICA1 Robot, copyright (c) 1998-1999
+;by: Marcio de Sousa Pessoa
+;Last build: Jan 29th, 1999
+
+
+[Data]
+;--> Title max. 16 caractes.
+Title=DRICA1 Robot
+;--> Max. combinations = 128.
+DeviceInterfaceCombinations=8
+
+
+[Output]
+;--> OutName = max. 16 caracters.
+OutName0=Direita
+OutAct0=1
+OutName1=Esquerda
+OutAct1=129
+OutName2=Sobe
+OutAct2=2
+OutName3=Desce
+OutAct3=130
+OutName4=Abre
+OutAct4=4
+OutName5=Fecha
+OutAct5=132
+;...
+;OutName127=
+;OutAct127=
+
+
+[Input]
+;--> InpName = max. 24 caracters.
+InpName0=Nenhum sensor ativado
+InpAct0=0
+InpName1=Limite horizontal
+InpAct1=1
+InpName2=Limite vertical
+InpAct2=2
+InpName3=Limite da garra
+InpAct3=4
+InpName4=Controle ativado...
+InpAct4=255
+InpName5=Controle desativado...
+InpAct5=72
+;...
+;InpName127=
+;InpAct127=
+
+
+[Keyboard]
+;--> RIGHT, LEFT, UP, DOWN = Scroll keys.
+;--> F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12 = Funcion keys.
+;--> INSERT, DELETE, HOME, END, PGUP, PGDN = Midle keyboard keys.
+Keyb0=RIGHT
+Keyb1=LEFT
+Keyb2=UP
+Keyb3=DOWN
+Keyb4=a
+Keyb5=z
+;...
+;Keyb127=
+
+
+[Mouse]
+;--> 00 = There are nothing mouse button actived.
+;--> 01 = There are the first button actived.
+;--> 10 = There are the last button actived.
+MouseRight00=1
+MouseLeft00=129
+MouseUp00=130
+MouseDown00=2
+;MouseRight01=
+;MouseLeft01=
+MouseUp01=132
+MouseDown01=4
+;MouseRight10=
+;MouseLeft10=
+;MouseUp10=
+;MouseDown10=
+;--> Namex max. 14 Caracters
+ButtonName0=Ativa Garra
+ButtonName1=Ativa Bra‡o
+
+
+[Joystick]
+;--> 00 = There are nothing joystick fire actived.
+;--> 01 = There are the first fire actived.
+;--> 10 = There are the last fire actived.
+JoyRight00=1
+JoyLeft00=129
+JoyUp00=130
+JoyDown00=2
+;JoyRight01=
+;JoyLeft01=
+JoyUp01=132
+JoyDown01=4
+;JoyRight10=
+;JoyLeft10=
+;JoyUp10=
+;JoyDown10=
+;--> Namex max. 14 Caracters
+FireName0=Ativa Garra
+FireName1=Ativa Bra‡o
+
+
+[Controls]
+;binary model, 0= Disabled, 1= Enabled
+Keyboard=1
+Mouse=1
+Joystick=1
+Serial=1
+StartUpSerialInLogon=0

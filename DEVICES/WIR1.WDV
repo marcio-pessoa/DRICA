@@ -1,0 +1,93 @@
+;Device control file - low level -
+;WIR1 Wizards Infra Red, copyright (c) 1998-1999
+;by: Marcio de Sousa Pessoa
+;Last build: Jan 29th, 1999
+
+
+[Data]
+;--> Title max. 16 caractes.
+Title=Infra Red
+;--> Max. combinations = 128.
+DeviceInterfaceCombinations=2
+
+
+[Output]
+;--> OutName = max. 16 caracters.
+OutName0=Pisca Infra-Red
+OutAct0=1
+;...
+OutName127=
+OutAct127=
+
+
+[Input]
+;--> InpName = max. 24 caracters.
+InpName0=Controle desativado...
+InpAct0=127
+InpName1=Controle ativado...
+InpAct1=255
+;...
+InpName127=
+InpAct127=
+
+
+[Keyboard]
+;--> RIGHT, LEFT, UP, DOWN = Scroll keys.
+;--> F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12 = Funcion keys.
+;--> INSERT, DELETE, HOME, END, PGUP, PGDN = Midle keyboard keys.
+Keyb0=INSERT
+;...
+Keyb127=
+
+
+[Mouse]
+MouseRight00=1
+MouseLeft00=129
+MouseUp00=2
+MouseDown00=130
+MouseRight01=
+MouseLeft01=
+MouseUp01=132
+MouseDown01=4
+MouseRight10=
+MouseLeft10=
+MouseUp10=
+MouseDown10=
+MouseRight11=
+MouseLeft11=
+MouseUp11=
+MouseDown11=
+;--> Namex max. 16 Caracters
+ButtonName0=Ativa Garra
+ButtonName1=Ativa Bra‡o
+
+
+[Joystick]
+JoyRight00=1
+JoyLeft00=129
+JoyUp00=2
+JoyDown00=130
+JoyRight01=
+JoyLeft01=
+JoyUp01=132
+JoyDown01=4
+JoyRight10=
+JoyLeft10=
+JoyUp10=
+JoyDown10=
+JoyRight11=
+JoyLeft11=
+JoyUp11=
+JoyDown11=
+;--> Namex max. 16 Caracters
+FireName0=Ativa Garra
+FireName1=Ativa Bra‡o
+
+
+[Controls]
+;binary model, 0= Disabled, 1= Enabled
+Keyboard=1
+Mouse=0
+Joystick=0
+Serial=0
+StartUpSerialInLogon=0

@@ -1,0 +1,35 @@
+[General Data]
+DeviceFileUsed=COMS-V1.WDV
+ProgramTitle=Teste 2
+
+[Config]
+LastAdress=632
+TimeBase=14
+Repetition=0
+
+[Program]
+;--> Command, no. mili-seg active, no. repeat command, delay to next command
+Primeira saida, 2, 10, 0;
+Segunda saida, 2, 10, 0;
+Terceira saida, 2, 5, 0;
+
+;--> do command: do no. repeat command { command; command; ... command;}
+do 5
+{
+   Primeira saida;
+   Setima saida;
+   Segunda saida;
+}
+
+schedule 12:03
+{
+   Quarta saida, 3000;
+   Terceira saida, 200;
+   do 7
+   {
+      Segunda Saida;
+      Terceira Saida;
+   }
+}
+
+end.
